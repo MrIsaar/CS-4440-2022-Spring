@@ -237,7 +237,7 @@ public class CryptUtil {
             System.out.printf("[*] Shannon entropy of encrypted message (Bytes): %.12f%n", entropyBytes);
 
             byte[] decrypted = CryptUtil.cs4440Decrypt(encrypted, key);
-	    if (decrypted.equals(src.getBytes())){
+	    if (Arrays.equals(decrypted, src)){
                 System.out.println("[+] It works!  decrypted ： " + decrypted);
             } else {
                 System.out.println("Decrypted message does not match!");
