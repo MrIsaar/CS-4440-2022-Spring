@@ -189,7 +189,7 @@ public class CryptUtil {
      * @param cipherfilepath
      * @param key
      */
-    public static int decryptDoc(String plainfilepath, String cipherfilepath, Byte key) {
+    public static int decryptDoc(String cipherfilepath, String plainfilepath, Byte key) {
         // TODO
         return 0;
     }
